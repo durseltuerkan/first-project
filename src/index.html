@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>My Portfolio</title>
+</head>
+<body>
+  <!-- Header mit Navigationsleiste -->
+  <header class="bg-red-50 p-7 w-full fixed top-0 left-0 z-10 shadow-lg shadow-white-500/50" >
+    <nav>
+      <ul class="flex justify-between items-center">
+        <li class="hover:opacity-65 hover:underline"><a href="#home" id="goback"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li class="hover:opacity-65 hover:underline"><a href="#aboutme"><i class="fa-solid fa-user"></i>About Me</a></li>
+        <li class="hover:opacity-65 hover:underline"><a href="#myskills"><i class="fa-solid fa-star"></i>My Skills</a></li>
+        <li class="hover:opacity-65 hover:underline"><a href="#projects"><i class="fa-solid fa-list-check"></i>Projects</a></li>
+        <li class="hover:opacity-65 hover:underline"><a href="#contact"><i class="fa-solid fa-message"></i>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Main mit section zu den einzelnen Punkten -->
+  <main>
+    <section class="mt-24">
+      <h2 class="text-center text-5xl sm:text-6xl font-medium" id="aboutme">About Me</h2>
+      <div class="flex justify-center items-center mt-8">
+      <div class="border-4 w-1/4 h-3/4 mt-36 ml-3 p-32">
+      </div>
+      <div class="flex flex-col justify-center">
+      <h3 class="text-center mb-4 font-medium text-4xl" id="typing">Hi I'm <span>Dursel Türkan</span></h3>
+      <h3 class=" text-center  text-lg">
+        I am a Web Development student. Originally, I studied Food Technology at TU Berlin. In 2023, I decided to shift my focus and pursue a career in Web Development.I am currently undergoing further training to deepen my knowledge in this field. My primary focus is on Frontend Development, with a particular emphasis on learning JavaScript.
+      </h3>
+    </div>
+     </div>
+    </section>
+    <hr class="mx-auto mt-20  w-1/2" />
+  <section class="mt-28 ">
+    <h2 class="text-center text-5xl sm:text-6xl font-medium" id="myskills">My Skills</h2>
+    <!-- Grid with Tailwind -->
+   
+    <div class=" grid grid-cols-3 gap-4 p-3 mt-14 mx-5" >
+       <!-- Umklappbare Karten -->
+     <div class="relative w-72 h-48 perspective-1000">
+      <input type="checkbox" id="card-toggle" class="hidden">
+      <label for="card-toggle" class="absolute inset-0 transform-style-preserve-3d transition-transform duration-500">
+      <div class="bg-red-50  absolute inset-0  front">
+        <!-- Inhalt Vorderseite -->
+        <h2 class="text-l font-bold">HTML5</h2>
+        <p>Hier ist der Text für die Vorderseite der Karte.</p>
+      </div>
+      <div class="absolute inset-0 bg-gray-200 back transform rotate-y-180">
+        <!-- Inhalt der Rückseite der Karte -->
+        <h2 class="text-xl font-bold">Rückseite</h2>
+        <p>Hier ist der Text für die Rückseite der Karte.</p>
+      </div>
+    </label>
+  </div>
+
+
+      <div class="bg-red-50 place-content-center h-40 border-4 text-center " id="change">CSS</div>
+      <div class="bg-red-50  border-4   place-content-center text-center" id="change">SASS</div>
+      <!-- Leeres div um tailwind zu zentrieren -->
+      <div></div>
+      <div class="bg-red-50  border-4  h-40 place-content-center text-center" id="change">Tailwind</div>
+    </div>
+    </section>
+  <hr class="mx-auto mt-20  w-1/2" />
+  <section class="mt-28 ">
+    <h2 class="text-center text-5xl sm:text-6xl font-medium" id="projects">Projects
+    </h2> 
+  </section>
+  <hr class="mx-auto mt-20  w-1/2" />
+  <!-- Kontaktformular startet hier -->
+  <section class="mt-28 ">
+    <h2 class="text-center text-5xl sm:text-6xl font-medium" id="contact">Contact
+    </h2> 
+     <form class="max-w-6xl mx-auto mt-20 text-2xl sm:text-3xl flex flex-col items-left gap-4">
+    <div>
+      <label  for="name">Name</label>
+      <input type="text" id="name" placeholder="Your name" required class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid shadow-lg  shadow-black-500/50 focus:outline-yellow-500 ">
+     </div>
+    <div>
+      <label for="email">E-Mail</label>
+      <input type="email" id="email" placeholder="test@test.com" required class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid shadow-lg shadow-black-500/50  focus:outline-yellow-500">
+    </div>
+    <div>
+      <label class="block" for="message">Message</label>
+      <textarea name="message" id="message" cols="30" rows="10" required class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid shadow-lg shadow-black-500/50 focus:outline-yellow-500" placeholder="Send me a message "></textarea>
+    </div>
+    <div>
+      <button type="submit" class="bg-red-50 hover:bg-orange-200 active:bg-red-50 p-3 w-48 rounded-xl border border-solid shadow-lg shadow-black-500/50 ">Send</button>
+    </div>
+  </form>
+ </section>
+<!-- section mit Social-Media-Verlinkungen -->
+<ul class="flex justify-center gap-6 text-3xl sm:text-4xl my-5">
+  <li><a href="https://github.com/durseltuerkan" target="_blank" ><i class="fa-brands fa-github hover:text-amber-500"></i></a></li>
+  <li><a href="https://www.linkedin.com/in/dursel-t%C3%BCrkan-b31486104/" target="_blank" ><i class="fa-brands fa-linkedin hover:text-amber-500"></i></a></li>
+  <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram hover:text-amber-500"></i></a></li>
+</ul>
+</main>
+<!-- footer mit Copyright -->
+<footer class="bg-red-50 text-l p-3 ">
+  <div class="flex flex-col sm:gap-2">
+    <p class="text-left">Copyright &copy; <span>2024</span></p>
+    <p class="text-left">All Rights Reserved</p>
+    <p class="text-right animate-pulse"><a href="#goback"><i class="fa-solid fa-house"></i>Home</a></p>
+  </div>
+
+</footer>
+</body>
+</html>
