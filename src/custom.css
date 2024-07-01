@@ -15,10 +15,11 @@ span {
 }
 #typing {
 
-    width: 30%;
+    width: 45%;
+    /* outline: 1px solid red; */
     margin: 0 auto;
-    border-right: .15em solid;
-    animation: type 3s steps(15) infinite, blink 2s steps(1) infinite;
+    border-right: .15em solid rgb(185, 150, 104);
+    animation: type 4s steps(15) infinite;
     letter-spacing: .15em;
     white-space: nowrap;
     overflow: hidden;
@@ -26,17 +27,9 @@ span {
 
 @keyframes type {
     0% { width: 0; }
-    100% { width: 50%; }
+    100% { width: 470px; }
 }
-/* @keyframes blink {
-    0%,100%{
-        border-color:transparent
-    }
-    50%{
-        border-color: rgb(185, 150, 104);
-    }
 
-} */
 
 #change:hover {
     animation: flip 5s ease-in-out ;
