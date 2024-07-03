@@ -1,12 +1,17 @@
 body {
-  background:linear-gradient(to right, #e4dedcd2, #e0dcd96b), url(./images/pexels-leticia-alvares-1805702-14081998.jpg);
+  background:linear-gradient(to right, #f5f2f2d2, #c0bdbb6b), url(./images/pexels-leticia-alvares-1805702-14081998.jpg);
   font-family: "Roboto", sans-serif;
 }
 
-.fa-solid, .fa-brands {
+.fa-solid, .fa-bootstrap, .fa-html5, .fa-css3, .fa-sass  {
   padding: 0.3em;
   margin-right: 0.2em;
   color: rgb(185, 150, 104);
+}
+
+.fa-brands {
+  padding: 0.3em;
+  margin-right: 0.2em;
 }
 
 h2 {
@@ -723,14 +728,6 @@ video {
   width:100%;
 }
 
-.w-10 {
-  width:2.5rem;
-}
-
-.w-10\/12 {
-  width:83.333333%;
-}
-
 .max-w-6xl {
   max-width:72rem;
 }
@@ -909,11 +906,6 @@ video {
   line-height:1.75rem;
 }
 
-.text-6xl {
-  font-size:3.75rem;
-  line-height:1;
-}
-
 .font-bold {
   font-weight:700;
 }
@@ -977,10 +969,6 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:hidden {
-    display:none;
-  }
-
   .sm\:gap-2 {
     gap:0.5rem;
   }
@@ -999,20 +987,11 @@ video {
     font-size:3.75rem;
     line-height:1;
   }
-
-  .sm\:text-5xl {
-    font-size:3rem;
-    line-height:1;
-  }
 }
 
 @media (min-width: 768px) {
   .md\:flex {
     display:flex;
-  }
-
-  .md\:hidden {
-    display:none;
   }
 
   .md\:w-1\/2 {

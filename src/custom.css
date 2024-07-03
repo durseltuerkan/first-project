@@ -1,12 +1,17 @@
 body {
-    background:linear-gradient(to right, #e4dedcd2, #e0dcd96b), url(./images/pexels-leticia-alvares-1805702-14081998.jpg);
+    background:linear-gradient(to right, #f5f2f2d2, #c0bdbb6b), url(./images/pexels-leticia-alvares-1805702-14081998.jpg);
     font-family: "Roboto", sans-serif;
 }
-.fa-solid, .fa-brands {
+.fa-solid, .fa-bootstrap, .fa-html5, .fa-css3, .fa-sass  {
     padding: 0.3em;
     margin-right: 0.2em;
     color: rgb(185, 150, 104);
 }
+.fa-brands {
+  padding: 0.3em;
+  margin-right: 0.2em;
+}
+
 h2 {
     font-family: "Roboto Mono", monospace;
 }
@@ -29,10 +34,6 @@ span {
     0% { width: 0; }
     100% { width: 470px; }
 }
-
-
-
-  
 
 .perspective-1000 {
     perspective: 1000px;
